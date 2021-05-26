@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     print(rownum)
     
     i=0
-    while i < rownum: #쿼리 결과 값 나온 행 수 만큼 반복해서 값 넘겨주기
+    while i < rownum: #쿼리 결과 값 나온 행 수 만큼 반복해서 
         result = cur.fetchone()[0] #cur.fetchone()로 한 행 결과값 묶어주기 (fetchall() 을 호출하면 전체 행 값이 나옴) ([0] 을 넣어줘야 대괄호나 괄호가 안생김)
         req_url = requests.post('https://intra.refinehub.com:7075/RF_COUNT/minsu/insertUsr', json = result) #결과 값 URL 호출
         print(result)
@@ -29,3 +29,4 @@ def lambda_handler(event, context):
 
     cur.close()
     conn.close()
+
