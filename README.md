@@ -7,6 +7,7 @@ aws_lambda_groupware_data_output
 기본 AWS 람다에서 지원하지 않는 라이브러리(requests, psycopg2)가 있기에 AWS 람다 콘솔패널에 있는 계층에 Zip 파일을 추가해서 계층을 만들고 붙여야 작동합니다.
 
 requests : GET, POST url 호출시 사용되는 라이브러리
+
 psycopg2 : PostgreSQL DB 접속 및 쿼리 명령어 사용시 필요한 라이브러리
 
 
