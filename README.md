@@ -11,6 +11,9 @@ requests : GET, POST url 호출시 사용되는 라이브러리
 psycopg2 : PostgreSQL DB 접속 및 쿼리 명령어 사용시 필요한 라이브러리
 
 
-This is a python file for AWS Lambda allows to put recently(20 min) changed users info in groupware DB to internal AWS main DB by POST
 
-you need to add layers to AWS Lambda panel to call python libraries
+
+
+This is a python file for AWS Lambda allows to put recently(20 min) changed users info in groupware DB to internal AWS RDB by POST method
+
+you need to add layers to AWS Lambda panel to call python libraries (requests, psycopg2)
